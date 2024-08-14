@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gayathri's Flower Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Nashua Flower Shop</h1>
+        <p>New Hampshire flower shop with the freshest blooms!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#flowers">Flowers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to Gayathri's FlwrShp!</h2>
+        <p>We offer a wide variety of fresh flowers, perfect for any occasion. Our flower shop is dedicated to bringing you the finest and most beautiful blooms, handpicked and arranged with care. Whether you're celebrating a special occasion or simply brightening up your home, our selection has something for everyone.</p>
+        
+        <div class="shop-info">
+            <div class="info-item">
+                <h3>Our Mission</h3>
+                <p>At Gayathri's FlwrShp, we strive to provide our customers with the highest quality flowers and exceptional service. We believe that flowers have the power to brighten anyone's day, and we're passionate about helping you find the perfect bouquet.</p>
+            </div>
+            <div class="info-item">
+                <h3>Why Choose Us?</h3>
+                <ul>
+                    <li><strong>Freshness Guaranteed:</strong> We source our flowers daily to ensure they are always fresh and vibrant.</li>
+                    <li><strong>Expert Arrangements:</strong> Our skilled florists create stunning arrangements that are sure to impress.</li>
+                    <li><strong>Personalized Service:</strong> We take the time to understand your needs and provide personalized recommendations.</li>
+                </ul>
+            </div>
+            <div class="info-item">
+                <h3>Visit Us</h3>
+                <p>Located in the heart of the Nashua city, our shop is a haven for flower lovers. Come by and explore our wide range of flowers and arrangements. We look forward to seeing you!</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="flowers">
+        <h2>Our Flowers</h2>
+        <div class="gallery">
+            <div class="flower-item" data-name="Dazzler Rose" data-price="15">
+                <img src="images/dazzler-rose.jpg" alt="Dazzler Rose">
+                <p>Dazzler Rose - $15</p>
+                <button class="increase-qty" data-name="Dazzler Rose" data-price="15">+</button>
+                <button class="decrease-qty" data-name="Dazzler Rose" data-price="15">-</button>
+            </div>
+            <div class="flower-item" data-name="Bouquet Rose Lilly" data-price="25">
+                <img src="images/bouquet-rose-lilly.jpg" alt="Bouquet Rose Lilly">
+                <p>Bouquet Rose Lilly - $25</p>
+                <button class="increase-qty" data-name="Bouquet Rose Lilly" data-price="25">+</button>
+                <button class="decrease-qty" data-name="Bouquet Rose Lilly" data-price="25">-</button>
+            </div>
+            <div class="flower-item" data-name="Red Rose" data-price="10">
+                <img src="images/Redrose.jpg" alt="Red Rose">
+                <p>Red Rose - $10</p>
+                <button class="increase-qty" data-name="Red Rose" data-price="10">+</button>
+                <button class="decrease-qty" data-name="Red Rose" data-price="10">-</button>
+            </div>
+            <div class="flower-item" data-name="Hydrangea Rose" data-price="20">
+                <img src="images/hydrangea-rose.jpg" alt="Hydrangea Rose">
+                <p>Hydrangea Rose - $20</p>
+                <button class="increase-qty" data-name="Hydrangea Rose" data-price="20">+</button>
+                <button class="decrease-qty" data-name="Hydrangea Rose" data-price="20">-</button>
+            </div>
+            <div class="flower-item" data-name="Bouquet Red Rose" data-price="30">
+                <img src="images/bouquet-rose-lilly.jpg" alt="Bouquet Red Rose">
+                <p>Bouquet Red Rose - $30</p>
+                <button class="increase-qty" data-name="Bouquet Red Rose" data-price="30">+</button>
+                <button class="decrease-qty" data-name="Bouquet Red Rose" data-price="30">-</button>
+            </div>
+            <div class="flower-item" data-name="Sunflower" data-price="12">
+                <img src="images/sunflower.jpg" alt="Sunflower">
+                <p>Sunflower - $12</p>
+                <button class="increase-qty" data-name="Sunflower" data-price="12">+</button>
+                <button class="decrease-qty" data-name="Sunflower" data-price="12">-</button>
+            </div>
+            <div class="flower-item" data-name="Orchid" data-price="22">
+                <img src="images/orchid.jpg" alt="Orchid">
+                <p>Orchid - $22</p>
+                <button class="increase-qty" data-name="Orchid" data-price="22">+</button>
+                <button class="decrease-qty" data-name="Orchid" data-price="22">-</button>
+            </div>
+            <div class="flower-item" data-name="Tulip" data-price="16">
+                <img src="images/tulip.jpg" alt="Tulip">
+                <p>Tulip - $16</p>
+                <button class="increase-qty" data-name="Tulip" data-price="16">+</button>
+                <button class="decrease-qty" data-name="Tulip" data-price="16">-</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total-price">0</span></p>
+        <button id="checkout">Checkout</button>
+    </section>
+
+    <section id="checkout-section" style="display: none;">
+        <h2>Checkout</h2>
+        <form id="checkout-form">
+            <label for="customer-email">Your Email:</label>
+            <input type="email" id="customer-email" required>
+            <label for="customer-name">Your Name:</label>
+            <input type="text" id="customer-name" required>
+            <button type="submit">Submit Order</button>
+        </form>
+    </section>
+
+
+    <footer id="footer">
+        <p>Contact us at: <a href="mailto:info@flwrshp.com">info@flwrshp.com</a></p>
+    </footer>
+
+    <script>
+        // Initialize an empty cart and total price variable
+        const cart = [];
+        let totalPrice = 0;
+
+        // Function to update the Cart UI
+        function updateCartUI() {
+            const cartItems = document.getElementById('cart-items');
+            const totalPriceElement = document.getElementById('total-price');
+            
+            // Clear the cart items list
+            cartItems.innerHTML = '';
+
+            // Iterate over the cart array to display each item
+            cart.forEach((item, index) => {
+                const li = document.createElement('li');
+                li.innerHTML = `
+                    ${item.name} - $${item.price} x ${item.quantity} = $${item.totalPrice}
+                `;
+                cartItems.appendChild(li);
+            });
+
+            // Update the total price in the UI
+            totalPriceElement.textContent = totalPrice;
+        }
+
+        // Function to increase the quantity of a cart item
+        function increaseQuantity(name, price) {
+            const existingItem = cart.find(item => item.name === name);
+            if (existingItem) {
+                existingItem.quantity += 1;
+                existingItem.totalPrice += price;
+            } else {
+                // Add the flower item to the cart array with a quantity of 1
+                cart.push({ name, price, quantity: 1, totalPrice: price });
+            }
+            
+            // Update the total price
+            totalPrice += price;
+
+            updateCartUI();
+        }
+
+        // Function to decrease the quantity of a cart item
+        function decreaseQuantity(name, price) {
+            const itemIndex = cart.findIndex(item => item.name === name);
+            if (itemIndex !== -1) {
+                const item = cart[itemIndex];
+                if (item.quantity > 1) {
+                    item.quantity -= 1;
+                    item.totalPrice -= price;
+                    totalPrice -= price;
+                } else {
+                    // Remove the item from the cart if quantity is 1
+                    totalPrice -= item.price;
+                    cart.splice(itemIndex, 1);
+                }
+                updateCartUI();
+            }
+        }
+
+        // Add event listeners to all "+" buttons
+        document.querySelectorAll('.increase-qty').forEach(button => {
+            button.addEventListener('click', event => {
+                const name = event.target.getAttribute('data-name');
+                const price = parseInt(event.target.getAttribute('data-price'));
+                increaseQuantity(name, price);
+            });
+        });
+
+        // Add event listeners to all "-" buttons
+        document.querySelectorAll('.decrease-qty').forEach(button => {
+            button.addEventListener('click', event => {
+                const name = event.target.getAttribute('data-name');
+                const price = parseInt(event.target.getAttribute('data-price'));
+                decreaseQuantity(name, price);
+            });
+        });
+
+        // Show the checkout section when the "Checkout" button is clicked
+        document.getElementById('checkout').addEventListener('click', () => {
+            document.getElementById('checkout-section').style.display = 'block';
+        });
+
+        // Handle the form submission for checkout
+        document.getElementById('checkout-form').addEventListener('submit', event => {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
+            
+            const customerEmail = document.getElementById('customer-email').value;
+            const customerName = document.getElementById('customer-name').value;
+
+            // Generate a receipt
+            alert(`Thank you for your order, ${customerName}! We have sent a confirmation to ${customerEmail}.`);
+
+            // Clear the cart and hide the checkout section
+            cart.length = 0;
+            totalPrice = 0;
+            updateCartUI();
+            document.getElementById('checkout-section').style.display = 'none';
+        });
+
+        // Handle the contact form submission
+        document.getElementById('contact-form').addEventListener('submit', event => {
+            event.preventDefault();
+            
+            const contactName = document.getElementById('contact-name').value;
+            const contactEmail = document.getElementById('contact-email').value;
+            const contactMessage = document.getElementById('contact-message').value;
+
+            // For simplicity, we'll just alert the contact form details
+            alert(`Thank you, ${contactName}! We have received your message and will get back to you at ${contactEmail}.`);
+            
+            // Clear the contact form fields
+            document.getElementById('contact-form').reset();
+        });
+    </script>
+</body>
+</html>

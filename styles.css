@@ -1,0 +1,242 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #FFB6C1;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2em;
+    color: #FFB6C1;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* CSS to ensure fixed and identical dimensions for images */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flower-item {
+    width: 200px; /* Set the width of each item */
+    margin: 15px; /* Space between items */
+    text-align: center;
+}
+
+.flower-item img {
+    width: 100%; /* Make the image fit the container */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Ensure the image covers the area */
+    border-radius: 8px; /* Optional: adds rounded corners to images */
+}
+
+
+.flower-item p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.flower-item button {
+    margin-top: 10px;
+    background-color: #FFB6C1;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.flower-item button:hover {
+    background-color: #e65c55;
+}
+
+.flower-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Cart and Checkout */
+#cart, #checkout-section {
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#checkout-form label, #checkout-form input {
+    display: block;
+    margin: 10px 0;
+}
+
+#checkout-form input[type="email"], #checkout-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#checkout-form button {
+    background-color: #FFB6C1;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#checkout-form button:hover {
+    background-color: #e65c55;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+footer a {
+    color: #FFB6C1;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+#home {
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+}
+
+#home h2 {
+    font-size: 2.5em;
+    color: #4a4a4a;
+}
+
+#home p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.shop-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.info-item {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-item h3 {
+    font-size: 1.8em;
+    color: #5a5a5a;
+}
+
+.info-item p, .info-item ul {
+    font-size: 1em;
+    line-height: 1.4;
+    color: #666;
+}
+
+.info-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-item ul li {
+    padding: 5px 0;
+}
+
+.info-item ul li strong {
+    color: #333;
+}
